@@ -13,9 +13,10 @@ This branch contains necessary files and instructions to run and manage bioporta
 6.  `sudo chmod +r /etc/grid-security/privkey.pem`
 
 ## build docker
-7. `cd /home/workspace/elixir/` (where Dockerfile and nginx.conf are stored)
-8. `docker build . -t elixir_portal:latest`
-9. `docker run -d --mount type=bind,source=/etc/grid-security,target=/etc/grid-security -p 80:80 -p 443:443 elixir_portal:latest`
+7. Clone this repository to your machine 
+8. `cd server-config/`
+9. `docker build . -t elixir_portal:latest --no-cache`
+10.`docker run -d --mount type=bind,source=/etc/grid-security,target=/etc/grid-security -p 80:80 -p 443:443 elixir_portal:latest`
 
 
 # General
