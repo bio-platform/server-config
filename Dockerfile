@@ -6,7 +6,7 @@ RUN apt-get clean \
     && apt-get -y install git
 
 RUN mkdir -p /srv
-RUN git clone -b ConfigVersion "https://github.com/andrejcermak/frontend.git" /srv/flask_app \
+RUN git clone "https://github.com/andrejcermak/frontend.git" /srv/flask_app \
         && git clone "https://github.com/bio-platform/openstack-bioportal.git" /srv/flask_app/be \
         && git clone "https://github.com/bio-platform/bio-class.git" /srv/bio-class
 
