@@ -22,4 +22,4 @@ You will need frontend built in production mode.
 `docker ps`
 
 ## read gunicorn logs
-`cat srv/flask_app/gunicorn.log`
+`cat srv/flask_app/be/gunicorn.log`
